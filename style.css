@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e3eef5, #eef3f8);
+    padding: 30px;
+    color: #2c3e50;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.subtitle {
+    color: #555;
+    margin-top: 5px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all .25s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.form {
+    display: grid;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: .2s;
+}
+
+input:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 6px rgba(52,152,219,0.4);
+}
+
+.btn-primary {
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.btn-primary:hover {
+    background: #217dbb;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .2s;
+}
+
+.btn-secondary:hover {
+    background: #239b56;
+}
+
+.error {
+    margin-top: 12px;
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.result {
+    margin-top: 12px;
+    color: #2c3e50;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.history-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.history-list li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: white;
+    border-radius: 10px;
+    border-left: 5px solid #3498db;
+    font-size: 15px;
+    animation: fadeIn .4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    opacity: .7;
+}

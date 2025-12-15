@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice - TP6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Mini-Application </h1>
+    <p class="subtitle">HTML • CSS • JavaScript • PHP</p>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>Calculatrice</h2>
+
+        <form id="calc-form" class="form">
+            <div class="input-group">
+                <label>Nombre A</label>
+                <input type="number" id="nombreA" placeholder="Entrez un nombre">
+            </div>
+
+            <div class="input-group">
+                <label>Nombre B</label>
+                <input type="number" id="nombreB" placeholder="Entrez un nombre">
+            </div>
+
+            <div class="input-group">
+                <label>Opération</label>
+                <select id="operation">
+                    <option value="+">Addition (+)</option>
+                    <option value="-">Soustraction (−)</option>
+                    <option value="*">Multiplication (×)</option>
+                    <option value="/">Division (÷)</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-primary">Calculer</button>
+        </form>
+
+        <div id="error-msg" class="error"></div>
+        <div id="resultat" class="result"></div>
+    </section>
+
+    <section class="card">
+        <h2>Historique des opérations</h2>
+        <ul id="historique" class="history-list"></ul>
+    </section>
+
+    <section class="card center">
+    <a href="info.php" class="btn-secondary">Voir la page PHP →</a>
+    </section>
+
+</main>
+
+<footer class="footer">
+<p>TP6 — Mini-Application Web Avancée de haytam</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
